@@ -1,0 +1,16 @@
+1. 
+select first_name, job title from emp_details_view where last_name like 'A%';
+
+2. 
+SELECT first_name, department_id, salary FROM employees WHERE hire_date BETWEEN '05/01/01' AND '05/12/31' and salary >= 10000;
+
+3.
+SELECT employee_id, start_date, department_id from job_history WHERE employee_id BETWEEN '100' and '200' and department_id < 100;
+
+4.
+select job_id, job_title, min_salary from jobs where job_id like 'A%' or min_salary < '10000';
+
+5.
+SELECT location_id, street_address, city FROM locations WHERE city like 'S%' ORDER BY location_id ASC; 
+
+ 
