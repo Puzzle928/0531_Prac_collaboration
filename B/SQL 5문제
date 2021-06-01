@@ -21,9 +21,9 @@ details {padding : 1rem; white-space: pre-wrap;}
       
       <details>
             <summary>모범 답안</summary>
-            <strong>select</strong> first_name, last_name, job_title
-            <strong>from</strong> emp_details_view
-            <strong>where</strong> last_name like 'A%'; 
+            <strong>SELECT</strong> first_name, last_name, job_title
+            <strong>FROM</strong> emp_details_view
+            <strong>WHERE</strong> last_name LIKE 'A%'; 
           
             FIRST_NAME                               LAST_NAME                                          JOB_TITLE
             ---------------------------------------- -------------------------------------------------- ----------------------------------------------------------------------
@@ -42,10 +42,10 @@ details {padding : 1rem; white-space: pre-wrap;}
 
       <details>
             <summary>모범 답안</summary>
-            <strong>select</strong> first_name, last_name, department_id, salary
+            <strong>SELECT</strong> first_name, last_name, department_id, salary
             <strong>from</strong> employees
-            <strong>where</strong> hire_date <strong>between</strong>'05/01/01'<strong>and</strong>'05/12/31'
-            <strong>and</strong>last_name<strong>like</strong> like '%S%' <strong>and</strong> salary >= '5000';
+            <strong>WHERE</strong> hire_date <strong>BETWEEN</strong>'05/01/01'<strong>AND</strong>'05/12/31'
+            <strong>AND</strong>last_name<strong>LIKE</strong> LIKE '%S%' <strong>AND</strong> salary >= '5000';
 
             FIRST_NAME                               LAST_NAME                                          DEPARTMENT_ID     SALARY
             ---------------------------------------- -------------------------------------------------- ------------- ----------
@@ -63,9 +63,9 @@ details {padding : 1rem; white-space: pre-wrap;}
       
       <details>
             <summary>모범 답안</summary>
-            <strong>select</strong> job_id, JOB_TITLE, min_salary
-            <strong>from</strong> jobs
-            <strong>where</strong> job_id <strong> like </strong> 'A%' <strong>and</strong> min_salary </strong> < </strong>10000;
+            <strong>SELECT</strong> job_id, JOB_TITLE, min_salary
+            <strong>FROM</strong> jobs
+            <strong>WHERE</strong> job_id <strong> LIKE</strong> 'A%' <strong>AND</strong> min_salary </strong> < </strong>10000;
 
             JOB_ID               JOB_TITLE                                                              MIN_SALARY
             -------------------- ---------------------------------------------------------------------- ----------
@@ -83,12 +83,12 @@ details {padding : 1rem; white-space: pre-wrap;}
      
       <details>
             <summary>모범 답안</summary>
-            <strong>select</strong> employee_id, start_date, department_id 
-            <strong>from</strong> job_history
-            <strong>where </strong> department_id <strong> < </strong> '100'
-            <strong>and </strong> employee_id <strong>between </strong> '100' </strong> and </strong> '200'
+            <strong>SELECT</strong> employee_id, start_date, department_id 
+            <strong>FROM</strong> job_history
+            <strong>WHERE </strong> department_id <strong> < </strong> '100'
+            <strong>AND </strong> employee_id <strong>BETWEEN </strong> '100' </strong>AND</strong> '200'
 
-            EMPLOYEE_ID START_DA DEPARTMENT_ID
+            EMPLOYEE_ID START_DA DEPARTMENT_IDAND
             ----------- -------- -------------
             114 06/03/24            50
             122 07/01/01            50
@@ -107,10 +107,10 @@ details {padding : 1rem; white-space: pre-wrap;}
       
       <details>
             <summary>모범 답안</summary>
-            <strong>select</strong> location_id, street_address, city
-            <strong>from</strong> locations
-            <strong>where</strong> city </strong> like </strong> 'S%'
-            <strong>order by</strong> location_id asc;
+            <strong>SELECT</strong> location_id, street_address, city
+            <strong>FROM</strong> locations
+            <strong>WHERE</strong> city </strong> LIKE</strong> 'S%'
+            <strong>ORDER BY</strong> location_id ASC;
 
             LOCATION_ID STREET_ADDRESS                                                                   CITY
             ----------- -------------------------------------------------------------------------------- ------------------------------------------------------------
